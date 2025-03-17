@@ -2,7 +2,6 @@ import { cookies } from "next/headers";
 import { Box } from "./box";
 
 export const Content = async () => {
-  // Sleep for 2 seconds
   const cookieJar = await cookies();
   const text = (await new Promise((resolve) =>
     setTimeout(() => resolve("hello"), 2000)
