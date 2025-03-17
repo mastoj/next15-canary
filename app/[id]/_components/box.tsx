@@ -8,7 +8,7 @@ export const Box = async ({
   return (
     <div
       className={cn(
-        "w-full h-20 flex justify-center items-center gap-2",
+        "w-full h-30 flex justify-center items-center gap-2",
         className
       )}
     >
