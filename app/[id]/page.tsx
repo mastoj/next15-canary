@@ -24,9 +24,9 @@ const StaticStreamingPage = async ({ params }: PageProps) => {
       <Suspense fallback={<ContentSkeleton />}>
         <Content />
       </Suspense>
-      <Suspense fallback={<ContentSkeleton />}>
-        <CachedContent pageId={(await params).id} />
-      </Suspense>
+      <CachedContent pageId={(await params).id} />
+      {/* <Suspense fallback={<ContentSkeleton />}>
+      </Suspense> */}
     </div>
   );
 };
